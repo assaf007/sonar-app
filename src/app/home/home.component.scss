@@ -1,0 +1,133 @@
+@import "~src/styles.scss";
+
+.containerHome {
+  margin: 10px 0px 0px 0px;
+  position: relative;
+  .home-image {
+    content: url("/assets/images/home.jpg");
+    width: 100%;
+    height: 400px;
+  }
+  .flash-news {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    .nav-area {
+      display: flex;
+      flex-flow: column;
+      .arrow-label {
+        margin-top: 20px;
+        .arrows {
+          margin-top: 15px;
+          .left-arrow {
+            padding-right: 20px;
+            pointer-events: none;
+          }
+          .right-arrow {
+            padding-right: 20px;
+            i.fa {
+              color: $bluetext-color;
+            }
+          }
+        }
+        i.fa {
+          margin-right: 5px;
+          color: $product-name-color;
+          font-size: 20px;
+        }
+      }
+      .btn-date-label {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        padding-top: 15px;
+        button {
+          width: 90px;
+          text-align: left;
+        }
+        .document-label {
+          color: $bluetext-color;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+      .date-label {
+        margin-left: 5px;
+      }
+    }
+    .text-area {
+      text-align: justify;
+    }
+    .document-area {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      .file-label {
+        i.fa {
+          margin-right: 5px;
+          color: $product-name-color;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .machines {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    .title {
+      color: $bluetext-color;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .rounded-custom-btn {
+      margin-top: 50px;
+    }
+    .list_machines {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      .machine {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px 10px 50px;
+        img {
+          width: 250px;
+          height: 200px;
+          cursor: pointer;
+        }
+        .infos {
+          display: flex;
+          flex-direction: column;
+          .category {
+            color: $category-color;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          .product-id {
+            color: $category-color;
+            margin-top: 10px;
+          }
+          .product-name {
+            color: $product-name-color;
+            margin-top: 10px;
+          }
+        }
+        &:hover {
+          background-color: $onhover-color;
+        }
+      }
+      hr {
+        margin: 0px 20px 0px 20px;
+        border-color: $onhover-color;
+        opacity: 0.29;
+      }
+    }
+  }
+}

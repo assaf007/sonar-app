@@ -1,0 +1,82 @@
+@import "~src/styles.scss";
+
+.containerLogin {
+  .login-image {
+    content: url("/assets/images/login.jpg");
+    width: 100%;
+    height: 300px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 50%;
+    .logo {
+      .sonar-logo {
+        content: url("/assets/images/logo.png");
+        width: 150px;
+        height: 40px;
+      }
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      margin-top: 40px;
+      .login-input {
+        border: none;
+        border-bottom: 1px solid #c9bcbc;
+      }
+      .password-input {
+        border: none;
+        border-bottom: 1px solid #c9bcbc;
+        margin-top: 30px;
+      }
+      input:focus {
+        outline: none;
+      }
+      .forgot-password {
+        text-decoration: none;
+        color: $active-link-header;
+        margin-top: 20px;
+      }
+      .login-btn {
+        .rounded-custom-btn {
+          margin-top: 50px;
+        }
+      }
+    }
+    .languages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 50px;
+      a:first-child {
+        color: $bluetext-color;
+      }
+      a {
+        margin-right: 10px;
+        color: $product-name-color;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+
+    /* Placeholder style for browsers ======================================= */
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+    :-moz-placeholder {
+      /* Firefox 18- */
+      text-align: center;
+    }
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      text-align: center;
+    }
+    :-ms-input-placeholder {
+      text-align: center;
+    }
+  }
+}

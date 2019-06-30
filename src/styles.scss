@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* variables color ======================================= */
+$onhover-color: rgba(249, 249, 249, 0.99);
+$bluetext-color: rgba(37, 83, 112, 0.99);
+$category-color: rgba(69, 69, 69, 0.99);
+$product-name-color: rgba(171, 167, 122, 0.99);
+$active-link-header: rgb(171, 167, 122);
+$text-link-header: rgba(69, 69, 69, 0.99);
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+.rounded-custom-btn {
+  cursor: pointer;
+  background-color: white;
+  color: $bluetext-color;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 42px;
+  border: 2px solid $bluetext-color;
+  outline: none;
+  &:hover {
+    background-color: $onhover-color;
+  }
+}

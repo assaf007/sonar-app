@@ -1,0 +1,57 @@
+@import "~src/styles.scss";
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 0px 20px;
+  .logo {
+    display: flex;
+    padding: 15px 5px 5px 5px;
+    .sonar-logo {
+      content: url("/assets/images/logo.png");
+      width: 100px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 55%;
+    a {
+      position: relative;
+      padding: 15px 5px 5px 5px;
+      height: 25px;
+      font-weight: bold;
+      color: $text-link-header;
+
+      &:hover {
+        background-color: $onhover-color;
+      }
+    }
+    a:link {
+      text-decoration: none;
+    }
+    .activeLink::after {
+      content: "";
+      position: absolute;
+      left: 40%;
+      width: 30%;
+      margin-top: 23px;
+      line-height: 35px;
+      border-bottom: 2px solid $active-link-header;
+    }
+  }
+  .commands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 10%;
+    i.fa {
+      color: $product-name-color;
+      opacity: 0.69;
+      font-size: 20px;
+    }
+  }
+}
