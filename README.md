@@ -1,4 +1,5 @@
 # SonarApp
+Skeleton responsive app based on Angular 8.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
